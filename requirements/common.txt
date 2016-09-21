@@ -1,0 +1,10 @@
+Django==1.9.5
+psycopg2>=2.6.1
+django-bootstrap3>=7.0.0
+django_bootstrap_breadcrumbs>=0.7.3
+django-configurations>=1.0
+django_formtools>=1.0
+django_bower>=5.1.0
+Pillow==3.3.1
+dj-database-url==0.4.1
+whitenoise==3.2.1
