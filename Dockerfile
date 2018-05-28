@@ -7,7 +7,8 @@ RUN apt-get install -qy curl build-essential libpq-dev git
 
 # Install Node
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
-RUN apt-get install -qy nodejs
+RUN apt-get install -qy nodejs ruby
+RUN gem install dpl -v 1.8.47
 
 # ENV variables
 ENV APP_HOME /usr/src/app
