@@ -3,7 +3,7 @@ MAINTAINER devcows <info@devcows.com>
 
 # Install packages
 RUN apt-get update
-RUN apt-get install -qy curl build-essential libpq-dev git
+RUN apt-get install -qy curl build-essential libpq-dev git default-libmysqlclient-dev mysql-client
 
 # Install Node
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
