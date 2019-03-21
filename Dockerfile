@@ -1,4 +1,4 @@
-FROM python:3.5-slim
+FROM python:3.6-slim
 MAINTAINER devcows <info@devcows.com>
 
 # Install packages
@@ -8,7 +8,7 @@ RUN apt-get install -qy curl build-essential libpq-dev git default-libmysqlclien
 # Install Node
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -qy nodejs ruby
-RUN gem install dpl -v 1.8.47
+RUN gem install dpl -v 1.10.7
 
 # ENV variables
 ENV APP_HOME /usr/src/app
