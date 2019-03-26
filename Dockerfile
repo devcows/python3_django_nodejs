@@ -18,10 +18,5 @@ ENV DJANGO_CONFIGURATION Prod
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
-# Install dependencies
-COPY requirements $APP_HOME/requirements
-COPY requirements.txt $APP_HOME/requirements.txt
-RUN pip install -r requirements.txt
-
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
